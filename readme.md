@@ -29,28 +29,28 @@ For this assignment I want you to watch the following two videos and create your
 ## List of few commads used on this mini project
 
 1. `docker build -t hw8-devops .`
-   # Builds a Docker image with the tag "hw8-devops" from the current directory (denoted by the dot at the end).
+   ### Builds a Docker image with the tag "hw8-devops" from the current directory (denoted by the dot at the end).
 
 2. `docker run -it hw8-devops`
-   # Runs a new container from the "hw8-devops" image in interactive mode (-it flag). This allows you to access the container's shell.
+   ### Runs a new container from the "hw8-devops" image in interactive mode (-it flag). This allows you to access the container's shell.
 
 3. `docker run -it hw8-devops python3 -m pytest`
-   # Runs a new container from the "hw8-devops" image, and executes the command "python3 -m pytest" inside the container. This runs the Pytest testing framework.
+   ### Runs a new container from the "hw8-devops" image, and executes the command "python3 -m pytest" inside the container. This runs the Pytest testing framework.
 
 4. `docker run -it hw8-devops python3 -m pytest -v`
-   # Same as command 3, but with the added "-v" flag, which increases the verbosity of the Pytest output.
+   ### Same as command 3, but with the added "-v" flag, which increases the verbosity of the Pytest output.
 
 5. `docker run -it hw8-devops python3 -m pytest -v --cov`
-   # Same as command 4, but with the added "--cov" flag, which enables code coverage analysis using the coverage.py library.
+   ### Same as command 4, but with the added "--cov" flag, which enables code coverage analysis using the coverage.py library.
 
 6. `docker run hw8-devops test.py`
-   # Runs a new container from the "hw8-devops" image, and executes the command "test.py" inside the container. This likely runs a Python script named "test.py".
+   ### Runs a new container from the "hw8-devops" image, and executes the command "test.py" inside the container. This likely runs a Python script named "test.py".
 
 7. `docker build -t dyerovi/hw8-devops .`
-   # Builds a Docker image with the tag "dyerovi/hw8-devops" from the current directory. The "dyerovi/" prefix suggests this image will be pushed to a Docker Hub repository owned by "dyerovi".
+   ### Builds a Docker image with the tag "dyerovi/hw8-devops" from the current directory. The "dyerovi/" prefix suggests this image will be pushed to a Docker Hub repository owned by "dyerovi".
 
 8. `docker push dyerovi/hw8-devops`
-   # Pushes the "dyerovi/hw8-devops" image to the Docker Hub repository.
+   ### Pushes the "dyerovi/hw8-devops" image to the Docker Hub repository.
 
 9. `docker run -it dyerovi/hw8-devops python3 -m pytest`
-   # Runs a new container from the "dyerovi/hw8-devops" image, and executes the command "python3 -m pytest" inside the container. This runs the Pytest testing framework.
+   ### Runs a new container from the "dyerovi/hw8-devops" image, and executes the command "python3 -m pytest" inside the container. This runs the Pytest testing framework.
